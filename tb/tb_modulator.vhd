@@ -106,10 +106,8 @@ begin
         wait for 100 ns;
         rst <= '0';
         
-        --run for 2us to see multiple symbols
-        wait for 2000 ns;
-        
-        std.env.finish;
+        --simulator set to run for 10us.
+        wait;
     end process;      
     
 end sim;
